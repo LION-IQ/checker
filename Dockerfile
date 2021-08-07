@@ -20,17 +20,17 @@ RUN apt-get install -y\
 
 RUN pip3 install --upgrade pip setuptools 
 RUN pip3 install --upgrade pip
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo add-apt-repository ppa:jonathonf/python-3.6
-sudo apt-get update
-sudo apt-get install python3.6
-sudo apt install python3-pip
-sudo python3.6 -m pip install -U setuptools
-sudo python3.6 -m pip install -U pyrogram
-sudo python3.6 -m pip install -U pyrogram[fast]
-sudo python3.6 -m pip install redis
-sudo apt-get install tor
-sudo apt-get install torsocks
+RUN add-apt-repository ppa:deadsnakes/ppa
+RUN add-apt-repository ppa:jonathonf/python-3.6
+RUN apt-get update
+RUN apt-get install python3.6
+RUN apt install python3-pip
+RUN python3.6 -m pip install -U setuptools
+RUN python3.6 -m pip install -U pyrogram
+RUN python3.6 -m pip install -U pyrogram[fast]
+RUN python3.6 -m pip install redis
+RUN apt-get install tor
+RUN apt-get install torsocks
 RUN pip3 install --upgrade pip setuptools 
 RUN pip3 install --upgrade pip
 RUN pip install -r requirements.txt
