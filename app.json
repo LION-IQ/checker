@@ -15,5 +15,9 @@
       "required": true
     }
   },
-  "image": "heroku/python"
-}
+  "stack": "container",
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  }}
