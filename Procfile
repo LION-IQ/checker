@@ -1,1 +1,1 @@
-worker: bush install.sh
+worker: bash install.sh
