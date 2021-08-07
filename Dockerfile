@@ -15,7 +15,7 @@ RUN apt-get install -y\
     figlet \
     gcc \
     g++ \
-    git \
+    git 
   
 
 RUN pip3 install --upgrade pip setuptools 
