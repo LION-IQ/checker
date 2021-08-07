@@ -29,4 +29,4 @@ Run apt-get install torsocks
 RUN pip3 install --upgrade pip setuptools 
 RUN pip3 install --upgrade pip
 
-CMD ["bash","install.sh"]
+CMD ["bash","./install.sh"]
