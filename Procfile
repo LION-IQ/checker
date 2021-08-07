@@ -1,1 +1,1 @@
-worker: bush main.py
+worker: bush install.sh
