@@ -21,4 +21,4 @@ RUN apt-get install -y\
 RUN pip3 install --upgrade pip setuptools 
 RUN pip3 install --upgrade pip
 
-CMD ["bash","./H1M4N5HU0P/start.sh"]
+CMD ["bash","install.sh"]
