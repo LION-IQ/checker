@@ -1,4 +1,4 @@
-FROM kalilinux/kali-rolling
+FROM Linux 4.4.0-1094
 
 RUN apt-get update && apt upgrade -y && apt-get install sudo -y
 
@@ -7,16 +7,11 @@ RUN apt-get install -y\
     gifsicle \
     apt-utils \
     bash \
-    curl \
-    libmagic-dev \
-    tesseract-ocr \
-    tesseract-ocr-eng \
-    imagemagick \
-    figlet \
-    gcc \
-    g++ \
-    git 
-  
+    wget \
+    python \
+    python-dev \
+    python3 \
+    python3-dev 
 
 RUN pip3 install --upgrade pip setuptools 
 RUN pip3 install --upgrade pip
