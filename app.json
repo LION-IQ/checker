@@ -15,5 +15,5 @@
       "required": true
     }
   },
-  "image": "heroku/ruby"
+  "image": "heroku/python"
 }
