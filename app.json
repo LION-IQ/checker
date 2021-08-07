@@ -1,0 +1,24 @@
+{
+  "name": "Zect",
+  "description": "Zect, a telegram userbot with MongoDB database",
+  "env": {
+    "API_ID": {
+      "description": "Get this value from my.telegram.org.",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org.",
+      "required": true
+    },
+    "SESSION": {
+      "description": "Get this value by running [python3 mysession.py] in Termux or local system.",
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
