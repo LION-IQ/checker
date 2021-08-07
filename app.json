@@ -15,5 +15,5 @@
       "required": true
     }
   },
-  "addons": ["heroku-postgresql:standard-0"]
- }
+  "image": "heroku/ruby"
+}
