@@ -15,7 +15,7 @@
       "required": true
     }
   },
- {
+
   "addons": ["heroku-postgresql:standard-0"]
   "environments": {
     "review": {
