@@ -1,20 +1,4 @@
-FROM alpine:edge
-RUN apt-get update && apt upgrade -y && apt-get install sudo -y
 
-RUN apt-get install -y\
-    coreutils \
-    gifsicle \
-    apt-utils \
-    bash \
-    curl \
-    libmagic-dev \
-    tesseract-ocr \
-    tesseract-ocr-eng \
-    imagemagick \
-    figlet \
-    gcc \
-    g++ \
-    git 
 Run add-apt-repository ppa:deadsnakes/ppa
 Run add-apt-repository ppa:jonathonf/python-3.6
 Run apt-get update
