@@ -1,4 +1,3 @@
-FROM kalilinux/kali-rolling
 
 RUN apt-get update && apt upgrade -y && apt-get install sudo -y
 
