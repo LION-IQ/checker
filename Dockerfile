@@ -1,4 +1,5 @@
-FROM alpine:edge
+FROM kalilinux/kali-rolling
+
 RUN apt-get update && apt upgrade -y && apt-get install sudo -y
 
 RUN apt-get install -y\
@@ -14,7 +15,11 @@ RUN apt-get install -y\
     figlet \
     gcc \
     g++ \
-    git 
+    git \
+  
+
+RUN pip3 install --upgrade pip setuptools 
+RUN pip3 install --upgrade pip
 Run add-apt-repository ppa:deadsnakes/ppa
 Run add-apt-repository ppa:jonathonf/python-3.6
 Run apt-get update
@@ -28,5 +33,6 @@ Run apt-get install tor
 Run apt-get install torsocks
 RUN pip3 install --upgrade pip setuptools 
 RUN pip3 install --upgrade pip
+RUN pip install -r requirements.txt
 
 CMD ["bash","./install.sh"]
