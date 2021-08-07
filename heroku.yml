@@ -1,5 +1,5 @@
 build: 
   docker:
-      worker: Dockerfile
+    worker: Dockerfile.heroku
 run:
    worker: python3 main.py
