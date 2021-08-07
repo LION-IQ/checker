@@ -15,9 +15,10 @@
       "required": true
     }
   },
+  {
   "addons": ["heroku-postgresql:standard-0"]
-  "environments": {
+  "environments": 
     "review": {
       "addons": ["heroku-postgresql:hobby-dev"]
     }
-}}
+}
